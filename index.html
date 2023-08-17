@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b4d395391c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Harsh</span> Vardhan<br>Singh Sisodia</h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------about--------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/WhatsApp Image 2023-07-26 at 11.13.47 AM.jpeg" alt="my pic">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>A proficient web developer with a decent foundation in C++, Java, Python, HTML, CSS, and JavaScript, eager to carve out a thriving career in the tech industry. Your adept skills encompass various programming languages, enabling you to craft dynamic and engaging web experiences. Fueled by a passion for innovation and an unwavering commitment to mastering the ever-evolving digital landscape, you're poised to make a significant impact in the world of technology.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <!-- SKILLS --> 
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>React</span><br>Building composable user interfaces</i></li>
+                            <li><span>Web Development</span><br>Web App Development (<i class="fa-brands fa-html5">, <i class="fa-brands fa-css3-alt"></i>, <i class="fa-brands fa-square-js"></i>)</i></li>
+                            <li><span>Problem solving</span><br>Data structures and algorithems</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>Gautam Buddha University <br>(YGPA - 8.78, SGPA - 9.28 3<sup>rd</sup> year)</li>
+                            <li><span>2019-2020</span><br>Milton Public School (Class XII)</li>
+                            <li><span>2017-2018</span><br>St. Conrads Inter College (Class X)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------services------------ -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-react"></i>
+                    <h2>React</h2>
+                    <p>Attained intermediate proficiency in ReactJS through dedicated learning efforts.</p>
+                    <a href="https://www.w3schools.com/REACT/DEFAULT.ASP" target="_blank">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>Web Development</h2>
+                    <p>I honed web dev skills via diverse online sources, including Love Babbar's insightful YouTube tutorials.</p>
+                    <a href="https://www.youtube.com/watch?v=Vi9bxu-M-ag&ab_channel=CodeHelp-byBabbar" target="_blank">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-figma"></i>
+                    <h2>Problem Solving</h2>
+                    <p>Diligently honing problem-solving skills through LeetCode, mastering Data Structures and Algorithms for continuous improvement.</p>
+                    <a href="https://www.youtube.com/watch?v=WQoB2z67hvY&list=PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA&ab_channel=CodeHelp-byBabbar" target="_blank">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------portfolio---------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="images/peakpx.jpg">
+                    <div class="layer">
+                        <h3>Company Website</h3>
+                        <p>This is an Agriculture Based company Website.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/2593043.jpg">
+                    <div class="layer">
+                        <h3>E-Commerce Website</h3>
+                        <p>This is the upcoming Project. In this Project I gave my 100% </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/peakpx (1).jpg">
+                    <div class="layer">
+                        <h3>Google Chrome Extention</h3>
+                        <p>This is Google Chrome Extention used to make bookmarks in a YouTube Video.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- -----------contact------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fa-solid fa-mobile-screen"></i>7060222364</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/harsh-vardhan-sisodia-010282246/" target="_blank" rel="noreference"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/hrshvrdhnsingh/" target="_blank" rel="noreference"><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook" target="_blank" rel="noreference"></i></a>
+                        <a href="https://github.com/Harshvrsingh" target="_blank" rel="noreference"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://discord.com/channels/harshvsingh_" target="_blank" rel="noreference"><i class="fa-brands fa-discord"></i></a>
+                    </div>
+
+                    <!-- ADD FINAL RESUME HERE. -->
+
+                    <a href="images/Harshvardhan Singh Sisodia.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">Hello</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169; Harshvardhan.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+    
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname)
+        {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            // displaying coloured line below skills and education tab
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu()
+        {
+            sidemenu.style.right = "0";
+        }
+        function closemenu()
+        {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyX4prFjUixFfxcX3rJfjFEfVFwgJSI5QJaMVKgtTAqUXP5H4Vnguy4oV1eKK2QWYFE6A/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
